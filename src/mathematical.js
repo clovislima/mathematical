@@ -7,8 +7,8 @@
  * @this HTMLStock
  * @since 0.1.0
  */
-export var Mathematical = {};
-
+const Mathematical = {};
+export {Mathematical}
 /**
  * A method factory to deal with decimals
  * @method decimalsCurry

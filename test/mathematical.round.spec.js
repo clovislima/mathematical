@@ -1,8 +1,8 @@
+import {Mathematical} from '../src/mathematical.js';
+import {assert} from 'chai';
+
 (function() {
 	'use strict';
-
-	const Mathematical = require('../src-handler.js').Mathematical;
-	const assert = require('chai').assert;
 
 	describe('Mathematical.round', function() {
 
