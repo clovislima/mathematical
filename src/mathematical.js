@@ -111,3 +111,19 @@ Mathematical.randomInt = function(min, max) {
 
 	return this.ceil(this.random.call(this, min, max));
 };
+
+/**
+ * Returns -1 if the number passed is negative, +1 e its positive or 0 if its 0
+ * @method getDirection
+ * @memberof Mathematical
+ * @public
+ * @param {number} num - A number on which the direction will be discovered
+ * @return {Number}
+ * @throws {TypeError}
+ * @since 1.0.0
+ */
+Mathematical.getDirection = function(num) {
+	if (typeof num !== 'number') /*then*/ throw TypeError('Expected a Number, but found ' + typeof num);
+
+	return num ? num/Math.abs(num) : 0;	
+};

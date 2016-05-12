@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/clovislima/mathematical.svg?branch=master)](https://travis-ci.org/clovislima/mathematical)
-[![Dependencies](https://david-dm.org/clovislima/mathematical.svg)](https://david-dm.org/clovislima/mathematical)
-## Objects
+[![Dependency Status](https://david-dm.org/clovislima/mathematical.svg)](https://david-dm.org/clovislima/mathematical)
+[![devDependency Status](https://david-dm.org/clovislima/mathematical/dev-status.svg)](https://david-dm.org/clovislima/mathematical#info=devDependencies)## Objects
 
 <dl>
 <dt><a href="#Mathematical">Mathematical</a> : <code>object</code></dt>
@@ -38,6 +38,7 @@ Mathematical is a collection of methods to help dealing with the Number class in
     * [.roundToEven(num, [decimals])](#Mathematical.roundToEven) ⇒ <code>Number</code>
     * [.random([min], [max])](#Mathematical.random) ⇒ <code>Number</code>
     * [.randomInt([min], [max])](#Mathematical.randomInt) ⇒ <code>Number</code>
+    * [.getDirection(num)](#Mathematical.getDirection) ⇒ <code>Number</code>
 
 <a name="Mathematical.round"></a>
 
@@ -122,6 +123,23 @@ Generates a random integer number
 | --- | --- | --- |
 | [min] | <code>number</code> | The minimum value to be generated. If only one value is passed as an argument then this value is considered a max. |
 | [max] | <code>number</code> | The maximum value to be generated. |
+
+<a name="Mathematical.getDirection"></a>
+
+### Mathematical.getDirection(num) ⇒ <code>Number</code>
+Returns -1 if the number passed is negative, +1 e its positive or 0 if its 0
+
+**Kind**: static method of <code>[Mathematical](#Mathematical)</code>  
+**Throws**:
+
+- <code>TypeError</code> 
+
+**Access:** public  
+**Since**: 1.0.0  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| num | <code>number</code> | A number on which the direction will be discovered |
 
 <a name="decimalsCurry"></a>
 

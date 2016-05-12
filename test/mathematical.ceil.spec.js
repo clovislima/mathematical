@@ -2,8 +2,6 @@
 	'use strict';
 
 	const Mathematical = require('../src-handler.js').Mathematical;
-	console.log('##########');
-	console.log(Mathematical);
 	const assert = require('chai').assert;
 
 	describe('Mathematical.ceil', function() {
