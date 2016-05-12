@@ -4,7 +4,7 @@
   "description": "A Math module to help to deal with some Math problems",
   "main": "./src/mathematical.js",
   "scripts": {
-    "docs": "cat readme.head.md > README.md && node_modules/.bin/jsdoc2md src/mathematical.js >> README.md",
+    "docs": "cat readme.head.md > README.md && node_modules/.bin/jsdoc2md src/**/*.js >> README.md",
     "test": "./node_modules/mocha/bin/mocha test/**/*.spec.js",
     "build": "npm test && ./node_modules/.bin/rollup --format iife --name Mathematical --input ./src/mathematical.js --output ./dist/mathematical.min.js && ./node_modules/uglify-js/bin/uglifyjs ./dist/mathematical.min.js --output=./dist/mathematical.min.js --compress --mangle"
   },
